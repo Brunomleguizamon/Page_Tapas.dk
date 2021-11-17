@@ -1,0 +1,51 @@
+/* general styles */
+
+body {
+  background-color: #fff;
+  font-family: "Rubik", sans-serif;
+  color: #ffa401;
+}
+
+.row-title {
+  padding-bottom: 30px;
+}
+
+/* navbar styles */
+
+.navbar {
+  background-color: #ffa401;
+  padding: 0;
+}
+
+.nav-item {
+  font-size: 20px;
+}
+
+.nav-item a:hover {
+  color: #015cff !important;
+}
+
+/* fist-section styles */
+.first-content {
+  background-color: #fff;
+}
+
+.first-img {
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: #015cff;
+  font-size: 20px;
+}
+
+/* products styles */
+
+.product-content {
+  padding-top: 30px;
+  background-color: #fff;
+}
+
+.card {
+  margin-bottom: 30px;
+}
