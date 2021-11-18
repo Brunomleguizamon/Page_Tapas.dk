@@ -2,6 +2,7 @@
 <head>
   <title>{% block title %}{% endblock %} - Tapas.dk </title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
   <link href="{{ url_for('static', filename="styles.css") }}" rel="stylesheet">
   <link rel="icon" href="{{ url_for('static', filename='tapas-logo.jpeg') }}" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +28,10 @@
           <a class="nav-link" href="#">Recipes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Abaout</a>
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
         </li>
       </ul>
       <a class="navbar-brand" href="#">
@@ -38,6 +42,33 @@
   </nav>
   {% block content %}
   {% endblock %}
+  <footer class="footer-content">
+    <div class="container-fluid footer-content">
+      <div class="row justify-content-md-center">
+        <div class="col-md-auto">
+          <h5>Follow us on our networks</h5>
+        </div>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col-md-auto footer-created">
+          <a href="https://www.instagram.com/tapas.dk/" target="_blank">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://api.whatsapp.com/send/?phone=4550162047&text&app_absent=0" target="_blank">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+      <div class="row justify-content-md-end">
+        <div class="col-md-auto">
+          <p class="footer-created">Created by <a href="https://github.com/Brunomleguizamon">Bruno Leguizamon</a></p>
+        </div>
+      </div>
+      <div class="row">
+        
+      </div>
+    </div>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 

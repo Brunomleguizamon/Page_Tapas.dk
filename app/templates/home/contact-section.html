@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row row-title">
+    <h2>Contact Us</h2>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <img class="first-img" src="{{ url_for('static', filename='tapas-fondo.jpeg') }}">
+    </div>
+    <div class="col-md-6 align-self-center">
+      <form class="contact-form">
+        <div class="row mb-3">
+          <label for="name" class="col-sm-2 col-form-label">Name</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="name">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="email" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="email">
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="7"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+      </form>
+    </div>
+  </div>
+</div>

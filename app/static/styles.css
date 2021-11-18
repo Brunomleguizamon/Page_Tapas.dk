@@ -49,3 +49,30 @@ body {
 .card {
   margin-bottom: 30px;
 }
+
+/* footer styles */
+
+.footer-content {
+  background-color: #333;
+  padding: 0;
+  padding-top: 20px;
+}
+
+.footer-created {
+  color: #555;
+}
+
+.footer-created a {
+  color: #ffa401;
+  text-decoration: none;
+}
+
+.bi {
+  font-size: 30px;
+  padding-right: 10px;
+}
+
+/* contact styles */
+.contact-form textarea {
+  resize: none;
+}
