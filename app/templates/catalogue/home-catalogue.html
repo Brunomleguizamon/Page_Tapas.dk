@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Catalogo
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+  <div class="row row-title">
+    <h2>Catalogo</h2>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card" width="50">
+        <img src="{{ url_for('static', filename='products/tapa-dicarlo-horno.jpeg') }}" class="card-img" alt="tapa dicarlo oven">
+        <div class="card-body">
+          <p class="card-text">Tapas Di Carlo - oven - 13cm vegan</p>
+          <a href="https://api.whatsapp.com/send/?phone=4550162047&text&app_absent=0" target="_blank" class="btn btn-primary">Order us</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <img src="{{ url_for('static', filename='products/tapa-dicarlo-freir.jpeg') }}" class="card-img" alt="tapa dicarlo deep frying">
+        <div class="card-body">
+          <p class="card-text">Tapas Di Carlo - deep frying - 13cm vegan</p>
+          <a href="https://api.whatsapp.com/send/?phone=4550162047&text&app_absent=0" target="_blank" class="btn btn-primary">Order us</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <img src="{{ url_for('static', filename='products/tapa-fargo-horno.jpeg') }}" class="card-img" alt="...">
+        <div class="card-body">
+          <p class="card-text">Tapas Fargo - oven - 14 cm</p>
+          <a href="https://api.whatsapp.com/send/?phone=4550162047&text&app_absent=0" target="_blank" class="btn btn-primary">Order us</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <img src="{{ url_for('static', filename='products/yerba-playadito.jpeg') }}" class="card-img" alt="...">
+        <div class="card-body">
+          <p class="card-text">Playadito - yerba mate 1Kg</p>
+          <a href="https://api.whatsapp.com/send/?phone=4550162047&text&app_absent=0" target="_blank" class="btn btn-primary">Order us</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <img src="{{ url_for('static', filename='products/dulce-sanignacio.jpeg') }}" class="card-img" alt="...">
+        <div class="card-body">
+          <p class="card-text">Dulce de Leche - San Ignacio 450g</p>
+          <a href="https://api.whatsapp.com/send/?phone=4550162047&text&app_absent=0" target="_blank" class="btn btn-primary">Order us</a>
+        </div>
+      </div>
+    </div>
+  </div>  
+</div>
+{% endblock %}
