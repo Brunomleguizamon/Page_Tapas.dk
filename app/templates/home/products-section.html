@@ -1,12 +1,12 @@
 <div class="container-fluid product-content " id="products">
-  <div class="row row-title">
+  <div class="row pt-3">
     <h2>Our products</h2>
   </div>
-  <div class="row"> 
+  <div class="row pt-3"> 
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <div class="row">
+          <div class="row row-title">
             <div class="col-md-4">
               <img src="{{ url_for('static', filename='products/tapa-dicarlo-horno.jpeg') }}" class="d-block w-100" alt="...">
             </div>
@@ -41,10 +41,9 @@
       </button>
     </div>
   </div>
-  <div class="row">
+  <div class="row pt-5">
     <div class="col-md-4">
       <a href="{{ url_for('catalogue.products') }}" class="btn btn-primary">See our products</a>
     </div>
-    
   </div>
 </div>
