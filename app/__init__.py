@@ -9,10 +9,14 @@ def create_app():
         SENDGRID_KEY=os.environ.get('SENDGRID_API_KEY')
     )
 
-    from . import home
-    app.register_blueprint(home.bp)
+    from . import (
+        home,
+        catalogue,
+        recipes
+    )
 
-    from . import catalogue
+    app.register_blueprint(home.bp)
     app.register_blueprint(catalogue.bp)
+    app.register_blueprint(recipes.bp)
 
     return app
