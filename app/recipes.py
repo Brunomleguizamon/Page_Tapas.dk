@@ -7,5 +7,5 @@ bp = Blueprint('recipes', __name__, url_prefix='/recipes')
 
 
 @bp.route('/', methods=['GET'])
-def products():
+def recipes():
     return render_template('recipes/home-recipes.html')

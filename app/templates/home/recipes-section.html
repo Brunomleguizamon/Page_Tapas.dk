@@ -1,0 +1,54 @@
+<div class="content-fluid" id="recipes">
+  <div class="row pt-3">
+    <h2>Our Recipes</h2>
+  </div>
+  <div class="row pt-3"> 
+    <div id="carouselRecipes" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row row-title">
+            <div class="col-md-3">
+              <img src="{{ url_for('static', filename='products/tapa-dicarlo-horno.jpeg') }}" class="rounded-circle" alt="..." width="250">
+            </div>
+            <div class="col-md-3">
+              <img src="{{ url_for('static', filename='products/tapa-dicarlo-freir.jpeg') }}" class="rounded-circle" alt="..." width="250">
+            </div>
+            <div class="col-md-3">
+              <img src="{{ url_for('static', filename='products/tapa-fargo-horno.jpeg') }}" class="rounded-circle" alt="..." width="250">
+            </div>
+            <div class="col-md-3">
+              <img src="{{ url_for('static', filename='products/tapa-fargo-horno.jpeg') }}" class="rounded-circle" alt="..." width="250">
+            </div>
+          </div>
+        </div>
+        <!--
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="{{ url_for('static', filename='products/yerba-playadito.jpeg') }}" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-md-4">
+              <img src="{{ url_for('static', filename='products/dulce-sanignacio.jpeg') }}" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-md-4">
+              
+            </div>
+          </div>
+        </div>
+        -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselRecipes" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselRecipes" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>  
+  <div class="row pt-5">
+    <div class="col-md-4">
+      <a href="{{ url_for('recipes.recipes') }}" class="btn btn-primary">See our recipes</a>
+    </div>
+  </div>
+</div>
