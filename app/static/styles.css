@@ -60,6 +60,7 @@ body {
   background-color: #333;
   padding: 0;
   padding-top: 20px;
+  margin: 0 -19px;
 }
 
 .footer-created {
