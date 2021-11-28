@@ -7,7 +7,7 @@
       <img class="first-img" src="{{ url_for('static', filename='tapas-fondo.jpeg') }}">
     </div>
     <div class="col-md-6 align-self-center">
-      <form class="contact-form">
+      <form class="contact-form" method="post" action="{{ url_for('home.mail') }}">
         <div class="row mb-3">
           <label for="name" class="col-sm-2 col-form-label">Name</label>
           <div class="col-sm-10">
